@@ -1,3 +1,12 @@
+/* Variables */
+
+:root {
+    --Strong-Cyan: rgb(38, 186, 164);
+    --Light-Blue: rgb(97, 115, 255);
+    --Dark-Grayish-Blue: rgb(76, 84, 93);
+    --Grayish-Blue: rgb(159, 171, 178);
+}
+
 /* General Styles */
 
 *,
@@ -11,6 +20,10 @@ body {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    font-size: 1.125rem;
+
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
 }
 
 img {
@@ -26,6 +39,42 @@ button {
 
 ul {
     list-style: none;
+}
+
+section {
+    padding-inline: 2rem;
+    margin-bottom: 5rem;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.button-group button {
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.button-group button:first-child {
+    background-color: var(--Strong-Cyan);
+}
+
+.button-group button:nth-child(2) {
+    background-color: var(--Grayish-Blue);
+}
+
+/* Specific Styles */
+
+.upper-section {
+    margin-top: 3rem;
+}
+.upper-section img {
+    margin: 0 auto;
 }
 
 .attribution {
