@@ -24,11 +24,13 @@ body {
 
     background-image: url(images/bg-header-mobile.png);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 img {
     display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 button {
@@ -47,14 +49,17 @@ p {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
     padding-inline: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .button-group {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    gap: 1rem;
 }
 
 .button-group button {
@@ -78,9 +83,6 @@ section {
 .upper-section {
     margin-top: 3rem;
 }
-.upper-section img {
-    margin: 0 auto;
-}
 
 .list-section-icon {
     margin: 0 auto;
@@ -93,10 +95,82 @@ section {
     gap: 4rem;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    padding-top: 3rem;
+
+    background-color: #9eabb23c;
+}
+
+footer img {
+    width: 4rem;
+}
+
+.footer-navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer button {
+    border: none;
+    background-color: inherit;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+    body {
+        background-image: url(images/bg-header-desktop.png);
+        font-size: 1.25rem;
+    }
+
+    .button-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    section:not(.full-bleed-section) {
+        padding-inline: 10%;
+    }
+
+    .full-bleed-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-inline: 10rem;
+    }
+
+    .full-bleed-section__header {
+        grid-column: 1 / -1;
+    }
+
+    .full-bleed-section img {
+        position: relative;
+        left: -35%;
+    }
+
+    .full-bleed-section ul {
+        position: relative;
+        left: -25%;
+    }
+
+    .lower-section ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lower-section ul li {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
 }
