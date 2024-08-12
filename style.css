@@ -131,6 +131,12 @@ footer button {
     background-color: inherit;
 }
 
+footer a:hover {
+    cursor: pointer;
+    color: var(--Strong-Cyan);
+    text-decoration: underline;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
