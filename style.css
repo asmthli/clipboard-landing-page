@@ -173,4 +173,40 @@ footer button {
         flex-basis: 0;
         flex-grow: 1;
     }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        padding-block: 2rem;
+        height: 15rem;
+        position: relative;
+    }
+
+    footer img {
+        margin: 0;
+    }
+
+    .footer-navigation-list {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        row-gap: 0;
+
+        height: 70%;
+    }
+
+    footer li {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+    }
 }
