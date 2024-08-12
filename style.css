@@ -25,6 +25,8 @@ body {
     background-image: url(images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: 100%;
+
+    color: var(--Dark-Grayish-Blue);
 }
 
 img {
@@ -135,6 +137,15 @@ footer a:hover {
     cursor: pointer;
     color: var(--Strong-Cyan);
     text-decoration: underline;
+}
+
+.socials svg {
+    fill: var(--Dark-Grayish-Blue);
+}
+
+.socials svg:hover {
+    cursor: pointer;
+    fill: var(--Strong-Cyan);
 }
 
 .attribution {
